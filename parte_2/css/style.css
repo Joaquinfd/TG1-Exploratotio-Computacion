@@ -1,0 +1,261 @@
+/*Ocupado para texto en el proceso*/
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:black;
+}
+
+
+/*BODY*/
+body {
+    margin: 3%;
+    background-image: "";
+    background: #b0b0b0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+/*FORMATO IMAGEN, se aplica a todas*/
+img {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    background: white;
+}
+
+.formato-imagen {
+    margin: 5px;
+    width: 500px;
+    height: 400px;
+    display: flex;
+    background: black;
+}
+
+/*ENCABEZADO*/
+.header {
+    min-height: 50px;
+    max-height: 100px;
+    background: lightskyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/*CONTAINER AMBOS GRAFICOS*/
+.main-graph-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/*CONTAINER HISTOGRAMA PRINCIPAL*/
+.main-hist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*CONTAINER DENSIDAD PRINCIPAL*/
+.main-dist-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*SCROLL REVEAL*/
+.hist {
+  
+  max-height: 400px;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction:column ;
+}
+
+.hist-all {
+  margin-top: 50px;
+  margin-bottom: 5px;
+  align-items: center;
+}
+
+.hist-1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-1);
+  align-items: center;
+}
+
+.hist-2 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-2);
+  align-items: center;
+}
+
+.hist-3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-3);
+  align-items: center;
+}
+
+.hist-4 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-4);  
+  align-items: center;
+}
+
+.hist-5 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-5);
+  align-items: center;
+}
+
+.hist-6 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: var(--color-5);
+  align-items: center;
+}
+
+.drop-down-container {
+  margin-top: 20px;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pie-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.dist-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*DROPDOWN, CODIGO OBTENIDO*/
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/*Dropdown button on hover & focus*/
+.dropbtn:hover, .dropbtn:focus {
+  background-color: gray;
+}
+
+/*The container <div> - needed to position the dropdown content*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*Dropdown Content (Hidden by Default)*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: '';
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*Change color of dropdown links on hover*/
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown-content-1 {
+  display: none;
+  position: absolute;
+  background-color:'';
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/*Links inside the dropdown*/
+.dropdown-content-1 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/*Change color of dropdown links on hover*/
+.dropdown-content-1 a:hover {background-color: gray}
+
+/*Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button)*/
+.show {display:block;}
+
+.show-1 {display: block;}
+
+
+
+
+.padre-drop {
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px; 
+}
+
+.madre-drop {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.abuelo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+
+.formato-imagen-2 {
+  margin: 5px;
+  width: 500px;
+  height: 400px;
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.container-central {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/*
+    EN ESTE TRABAJO SE UTILIZARON CODIGOS Y FUENTES ENCONTRADAS, LOS CUALES SE CONSIGUIERON O SE APRENDIO DE ELLOS EN 
+    LOS SIGUIENTES LINKS:
+
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://stackoverflow.com/questions/31089414/javascript-change-background-color-on-click
+    https://www.w3schools.com/cssref/pr_background-image.asp
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
+    
+*/

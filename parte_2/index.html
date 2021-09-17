@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    
+<meta charset="UTF-8">
+<title>Graficos Animes</title>
+<link href="css\style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="img\logo_uc.ico">
+
+</head>
+
+<body id="body1">
+    
+    <button onclick="funcion()" id="changeButton40">Fullmetal Alchemist: Brotherhood Mode</button>
+            
+    <!--ENCABEZADO-->
+    <div class="header" id="header">
+        
+        <h1>GRAFICOS DE SERIES DE ANIME</h1>
+
+    </div>
+    
+    <!--CONTENEDOR DE AMBOS GRAFICOS-->
+    <div class="main-graph-container">
+        
+        <!--CONTENEDOR HISTOGRAMA GENERAL-->
+        <div class="main-hist-container">
+
+            <div class="formato-imagen">
+                <img src="img\histograma_por_puntaje.png" alt="IMAGEN">
+            </div>
+
+            <button onclick="showgraphs1()" id="changeButton1" style="display: block; margin: 0 auto; border-radius: 7px;">Histogramas por tipo de serie</button>
+                
+        </div>
+
+        <!--CONTENEDOR DENSIDADES GENERAL-->
+        <div class="main-dist-container">
+
+            <div class="formato-imagen">
+                <img src="img\distribucion_de_densidad_ptje.png" alt="IMAGEN">
+            </div>
+
+            <button onclick="showgraphs2()" id="changeButton2" style="display: block; margin: 0 auto; border-radius: 7px;">Densidades por tipo de serie</button>
+            
+        </div>
+
+    </div>
+    
+    
+    <!--HISTOGRAMAS-->
+    <div class="hist  hist-all">
+        <div class="formato-imagen" id="hist-all" style="display: none;">
+            <img src="img\histograma_todos.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+
+    <div class="hist  hist-1">
+        <div class="formato-imagen" id="hist-1" style="display: none;">
+            <img src="img\histograma_movie.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+    
+    <div class="hist  hist-2">
+        <div class="formato-imagen" id="hist-2" style="display: none;">
+            <img src="img\histograma_tv.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+    
+    <div class="hist  hist-3">
+        <div class="formato-imagen" id="hist-3" style="display: none;">
+            <img src="img\histograma_ona.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+    
+    <div class="hist  hist-4">
+        <div class="formato-imagen" id="hist-4" style="display: none;">
+            <img src="img\histograma_music.png" alt="IMAGEN" style="display: '';">
+        </div>
+
+    </div>
+    
+    <div class="hist  hist-5">
+        <div class="formato-imagen" id="hist-5" style="display: none;">
+            <img src="img\histograma_ova.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+
+    <div class="hist  hist-6">
+        <div class="formato-imagen" id="hist-6" style="display: none;">
+            <img src="img\histograma_special.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+
+    <!--DISTRIBUCIONES-->
+    <div class="hist  hist-all">
+        <div class="formato-imagen" id="dist-all" style="display: none;">
+            <img src="img\distribucion_todos.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+
+    <div class="hist  hist-1">
+        <div class="formato-imagen" id="dist-1" style="display: none;">
+            <img src="img\distribucion_movie.png" alt="IMAGEN" style="display: '';">
+        </div>
+    </div>
+    
+    <div class="hist  hist-2">
+        <div class="formato-imagen" id="dist-2" style="display: none;">
+            <img src="img\distribucion_tv.png" alt="IMAGEN" style="display: '';">
+    </div>
+    
+    <div class="hist  hist-3">
+        <div class="formato-imagen" id="dist-3" style="display: none;">
+            <img src="img\distribucion_ona.png" alt="IMAGEN" style="display: '';">
+    </div>
+    
+    <div class="hist  hist-4">
+        <div class="formato-imagen" id="dist-4" style="display: none;">
+            <img src="img\distribucion_music.png" alt="IMAGEN" style="display: '';">
+    </div>
+    
+    <div class="hist  hist-5">
+        <div class="formato-imagen" id="dist-5" style="display: none;">
+            <img src="img\distribucion_ova.png" alt="IMAGEN" style="display: '';">
+    </div>
+
+    <div class="hist  hist-6">
+        <div class="formato-imagen" id="dist-6" style="display: none;">
+            <img src="img\distribucion_special.png" alt="IMAGEN" style="display: '';">
+    </div>
+
+    <!--CONTENEDOR DE BOTONES DROPDOWN-->
+    <div class="abuelo">
+        <div class="padre-drop">
+            <div class="dropdown">
+
+                <button onclick="myFunction()" class="dropbtn">Graficos de Torta de Progreso en Ver las Serie</button>
+
+                <div id="myDropdown" class="dropdown-content">
+                    <button onclick="mostrar_foto_1()" id="changeButton10" style="display: block; margin: 0 auto;">Anime Aggregated</button>
+                    <button onclick="mostrar_foto_2()" id="changeButton11" style="display: block; margin: 0 auto;">Top 5 Completed Comparison</button>
+                    <button onclick="mostrar_foto_3()" id="changeButton12" style="display: block; margin: 0 auto;">Top 5 Watching Comparison</button>
+                    <button onclick="mostrar_foto_4()" id="changeButton13" style="display: block; margin: 0 auto;">Top 5 Plan to Watch Comparison</button>
+                </div>
+                
+            </div>   
+        
+        </div>
+
+        <div class="madre-drop">
+            <div class="dropdown">
+
+                <button onclick="myFunction2()" class="dropbtn">Promedios y Regresiones de las Series</button>
+
+                <div id="myDropdown1" class="dropdown-content-1">
+                    <button onclick="mostrar_foto_5()" id="changeButton14" style="display: block; margin: 0 auto;">Score Means by Year</button>
+                    <button onclick="mostrar_foto_6()" id="changeButton15" style="display: block; margin: 0 auto;">Completed Means by Year</button>
+                    <button onclick="mostrar_foto_7()" id="changeButton16" style="display: block; margin: 0 auto;">Watching Means by Year</button>
+                    <button onclick="mostrar_foto_8()" id="changeButton17" style="display: block; margin: 0 auto;">Plan to Watch Means by Year</button>
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!--IMAGENES QUE DEBEN MOSTRAR LOS BOTONES DROPDOWN-->
+    <div class="formato-imagen-2" id="1">
+        <img src="img\pie_agg.png" id="pie-agg" alt="IMAGEN" style="display: none;">
+
+        <img src="img\pie_comp.png" id="pie-comp" alt="IMAGEN" style="display: none;">
+
+        <img src="img\pie_watching.png" id="pie-watching" alt="IMAGEN" style="display: none;">
+    
+        <img src="img\pie_towatch.png" id="pie-towatch" alt="IMAGEN" style="display: none;">
+    
+        <img src="img\score_means.png" id="score-means" alt="IMAGEN" style="display: none;">
+  
+        <img src="img\comp_means.png" id="comp-means"alt="IMAGEN" style="display: none;">
+    
+        <img src="img\watch_means.png" id="watch-means" alt="IMAGEN" style="display: none;">
+   
+        <img src="img\plan_means.png" id="plan_means"alt="IMAGEN" style="display: none;">
+    </div>
+
+    
+    <!--SCRIPT PARA JS DENTRO DE INDEX.HTML, LINKS Y PATH A SCRIPT.JS-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="js\scrypt.js"></script>
+
+
+</body>
+
+</html>
+
+<!--
+    EN ESTE TRABAJO SE UTILIZARON CODIGOS Y FUENTES ENCONTRADAS, LOS CUALES SE CONSIGUIERON O SE APRENDIO DE ELLOS EN 
+    LOS SIGUIENTES LINKS:
+
+    https://scrollrevealjs.org/
+
+-->
